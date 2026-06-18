@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The seventh self</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Outfit:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/assets/main-g5L48uuL.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/style-D7hjKXwM.css">
+  </head>
+  <body>
+    <div id="app">
+      <section id="experience-loader" class="experience-loader" aria-live="polite" aria-busy="true">
+        <div class="experience-loader__inner">
+          <div class="experience-loader__ring" aria-hidden="true">
+            <div id="experience-loader-orbit" class="experience-loader__orbit">
+              <svg class="experience-loader__svg" viewBox="0 0 120 120" role="presentation">
+                <circle class="experience-loader__track" cx="60" cy="60" r="52" />
+                <circle class="experience-loader__arc" cx="60" cy="60" r="52" />
+              </svg>
+              <span class="experience-loader__dot"></span>
+            </div>
+          </div>
+          <p class="experience-loader__label">L'ESPERIENZA È IN CARICAMENTO</p>
+          <div class="experience-loader__bar" aria-hidden="true">
+            <div id="experience-loader-bar" class="experience-loader__bar-fill"></div>
+          </div>
+        </div>
+      </section>
+
+      <div id="app-brand" class="app-brand hidden" aria-hidden="true">
+        <div class="app-brand__mark">
+          <img
+            src="/assets/seventh-self-logo.png"
+            alt="The Seventh Self"
+            class="app-brand__logo"
+            width="300"
+            height="221"
+          />
+        </div>
+      </div>
+
+      <div id="app-header-actions" class="app-header-actions hidden" aria-hidden="true">
+        <p id="app-globe-coords" class="app-globe-coords" aria-live="polite"></p>
+        <button
+          id="app-sound"
+          class="app-sound"
+          type="button"
+          aria-label="Suono ambiente"
+          aria-pressed="false"
+        >
+          <span class="app-sound__bars" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+        <button
+          id="app-about"
+          class="app-about"
+          type="button"
+          aria-controls="about-drawer"
+          aria-expanded="false"
+        >
+          SCOPRI DI PIÙ
+        </button>
+      </div>
+
+      <aside id="about-drawer" class="about-drawer hidden" aria-hidden="true">
+        <button id="about-backdrop" class="about-drawer__backdrop" type="button" aria-label="Chiudi"></button>
+        <section class="about-drawer__panel" role="dialog" aria-modal="false" aria-labelledby="about-title">
+          <div class="about-drawer__head">
+            <p class="about-screen__label">SCOPRI DI PIÙ</p>
+            <button id="about-close" class="about-drawer__close" type="button" aria-label="Chiudi">
+              ×
+            </button>
+          </div>
+          <h2 id="about-title" class="about-screen__title">The Seventh Self</h2>
+          <div class="about-screen__body">
+            <p>
+              The Seventh Self è un'esperienza interattiva che esplora l'idea di un sesto senso digitale:
+              la capacità di percepire connessioni che normalmente rimangono invisibili.
+            </p>
+            <p>
+              Partendo dal mito dei "sette sosia nel mondo", il progetto ne ridefinisce il significato. I sosia
+              qui non sono persone fisicamente identiche, ma individui che condividono qualcosa di più sottile:
+              una traccia emotiva, una tensione interiore, un modo di osservare il mondo, un pattern nascosto che
+              emerge dai dati.
+            </p>
+            <p>
+              Attraverso l'analisi del volto e di una serie di segnali percettivi, il sistema costruisce una mappa
+              di affinità e ricerca, all'interno di un archivio di migliaia di identità, sette presenze connesse
+              all'utente da relazioni non immediatamente visibili.
+            </p>
+            <p>
+              Queste connessioni vengono visualizzate come una costellazione di possibilità: persone lontane nello
+              spazio, ma vicine in una dimensione diversa, fatta di risonanze, intuizioni e somiglianze invisibili.
+            </p>
+            <p>
+              Al termine dell'esperienza, le sette identità convergono nella generazione di una nuova figura:
+              The Eighth Self.
+            </p>
+            <p>
+              L'Ottava Risonanza non esiste realmente. Non è un sosia, né una previsione. È una costruzione
+              simbolica generata dalla fusione delle connessioni emerse durante il percorso. Una possibile versione
+              latente di noi stessi.
+            </p>
+            <p class="about-screen__closing">The Seventh Self non cerca di dirti chi sei.</p>
+            <p class="about-screen__closing">Ti invita a chiederti da quante identità invisibili sei composto.</p>
+          </div>
+          <div class="about-drawer__credits">
+            <p>Progetto e autorialità: Giorgia Ciocca</p>
+            <a href="mailto:g.ciocca@ied.edu">g.ciocca@ied.edu</a>
+          </div>
+        </section>
+      </aside>
+
+      <section id="intro" class="screen screen--intro hidden" aria-hidden="true">
+        <main class="intro__main">
+          <div id="intro-step-1" class="intro__step intro__step--active">
+            <h1 class="intro__brand">THE SEVENTH SELF</h1>
+            <p class="intro__subtitle">un osservatorio delle identità invisibili</p>
+          </div>
+          <div id="intro-step-2" class="intro__step">
+            <h2 class="intro__brand intro__brand--phrase">Ci sono persone che ti somigliano.</h2>
+            <p class="intro__subtitle">Non per l'aspetto.</p>
+          </div>
+        </main>
+      </section>
+
+      <section id="world" class="screen screen--world hidden">
+        <div id="world-loading" class="world-loading hidden" aria-live="polite">
+          <p class="world-loading__text">Caricamento della costellazione…</p>
+        </div>
+        <canvas id="canvas3d"></canvas>
+        <div id="globe-reading-shield" class="globe-reading-shield hidden" aria-hidden="true"></div>
+        <canvas id="resonance-canvas" class="resonance-canvas hidden" aria-hidden="true"></canvas>
+
+        <aside
+          id="world-entry-phrase"
+          class="world-entry-phrase hidden"
+          aria-hidden="true"
+          aria-live="polite"
+        >
+          <p class="world-entry-phrase__line">THE SEVENTH SELF</p>
+          <p id="world-entry-phrase-sub" class="world-entry-phrase__sub">
+            un osservatorio delle identità invisibili
+          </p>
+        </aside>
+
+        <button id="world-explore-btn" class="world-explore-btn hidden" type="button">
+          INIZIA AD ESPLORARE
+        </button>
+
+        <aside id="experience-rail" class="experience-rail hidden" aria-label="Azioni esperienza">
+          <button id="repeat-experience" class="experience-rail__btn" type="button">
+            Nuova esperienza
+          </button>
+        </aside>
+
+        <div id="resonance-hud" class="resonance-hud hidden">
+          <div class="resonance-hud__copy">
+            <p class="resonance-hud__title">Le 7 risonanze</p>
+            <p class="resonance-hud__hint">
+              Ogni identità è nella sua città sul globo, collegate dai luoghi di provenienza
+            </p>
+          </div>
+        </div>
+
+        <div class="hud">
+          <div class="hud__narrative hud__narrative--left hidden" id="narrative">
+            <p id="narrative-text"></p>
+          </div>
+          <button id="scan-btn" class="hud__scan-btn hidden" type="button">
+            Rispondi alle domande
+          </button>
+        </div>
+
+        <div id="profile" class="profile hidden" aria-live="polite">
+          <div class="profile__panel">
+            <p class="profile__brand">THE SEVENTH SELF</p>
+
+            <div id="profile-reading-intro" class="profile__reading">
+              <p class="profile__reading-text">
+                Prima di osservare il tuo volto, devo capire cosa ti accompagna in questo momento.
+              </p>
+            </div>
+
+            <div id="profile-basic" class="profile__stage hidden">
+              <p class="profile__intro">
+                Prima di osservare il tuo volto, devo capire cosa ti accompagna in questo momento.
+              </p>
+              <form id="profile-basic-form" class="profile__basic-form">
+                <label class="profile__field">
+                  <span class="profile__field-label">Come ti chiami?</span>
+                  <input name="name" type="text" required autocomplete="name" />
+                </label>
+                <label class="profile__field">
+                  <span class="profile__field-label">Età</span>
+                  <input name="age" type="number" min="16" max="99" required />
+                </label>
+                <label class="profile__field">
+                  <span class="profile__field-label">Da dove vieni?</span>
+                  <input name="city" type="text" required autocomplete="address-level2" />
+                </label>
+                <button type="submit" class="profile__continue">Continua</button>
+              </form>
+            </div>
+
+            <div id="profile-questions-wrap" class="profile__questions profile__stage hidden">
+              <div class="profile__progress" aria-hidden="true">
+                <div class="profile__progress-bar" id="profile-progress"></div>
+              </div>
+              <p class="profile__step-label" id="profile-step-label">Domanda 1 di 5</p>
+              <form id="profile-form" class="profile__form" novalidate>
+                <!-- steps injected by main.js -->
+              </form>
+              <div class="profile__nav hidden" aria-hidden="true">
+                <button type="button" id="profile-prev" class="btn btn--ghost profile__nav-btn" disabled>
+                  Indietro
+                </button>
+                <button type="button" id="profile-next" class="btn btn--primary profile__nav-btn">
+                  Avanti
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="identity" class="identity hidden">
+          <div class="identity__panel">
+            <button id="close-identity" class="identity__close" type="button" aria-label="Chiudi">×</button>
+            <img id="identity-img" alt="Presenza selezionata" />
+            <p class="identity__id" id="identity-id">Presenza #—</p>
+            <p class="identity__copy" id="identity-copy"></p>
+          </div>
+        </div>
+
+        <div id="scanner" class="scanner hidden">
+          <div class="scanner__panel">
+            <div class="scanner__head">
+              <div class="scanner__head-text">
+                <h2>Lettura del volto</h2>
+              </div>
+              <button id="cancel-scan" class="scanner__close" type="button" aria-label="Annulla">×</button>
+            </div>
+
+            <div id="scanner-actions" class="scanner__actions">
+              <button id="scan-start-webcam" class="scanner__action-btn" type="button">
+                Usa la webcam
+              </button>
+              <label class="scanner__upload">
+                Carica un'immagine
+                <input id="scan-upload" type="file" accept="image/*" hidden />
+              </label>
+              <p id="scanner-message" class="scanner__message hidden" aria-live="polite"></p>
+            </div>
+
+            <div id="scanner-active" class="scanner__active hidden">
+              <div class="scanner__video-wrap">
+                <video id="webcam" autoplay playsinline muted></video>
+              </div>
+              <div class="scanner__progress">
+                <div class="scanner__bar" id="scan-bar"></div>
+              </div>
+              <p class="scanner__status scanner__status--live" id="scan-status-live">Inizializzazione…</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="eighth-self" class="eighth-self hidden" aria-live="polite">
+          <div id="eighth-panel" class="eighth-self__panel">
+            <p id="eighth-self-phase-title" class="eighth-self__title">L'OTTAVA RISONANZA</p>
+            <p id="eighth-self-tagline" class="eighth-self__tagline">Per qualcosa di più difficile da vedere</p>
+            <p id="eighth-self-reveal-title" class="eighth-self__reveal-title hidden">THE EIGHTH SELF</p>
+            <p id="eighth-self-generating-label" class="eighth-self__generating-label">in generazione...</p>
+            <div id="eighth-self-portrait" class="eighth-self__portrait">
+              <img id="eighth-self-img" alt="L'Ottava risonanza" class="eighth-self__img--hidden" />
+            </div>
+            <p id="eighth-self-copy" class="eighth-self__copy"></p>
+            <p id="eighth-self-prompt" class="eighth-self__prompt"></p>
+          </div>
+          <button id="eighth-self-close" class="eighth-self__back world-explore-btn hidden" type="button">
+            ← Torna al globo
+          </button>
+        </div>
+
+        <div id="scan-result" class="scan-result hidden">
+          <div class="scan-result__panel">
+            <button id="close-scan-result" class="scan-result__close" type="button" aria-label="Chiudi">×</button>
+            <p class="scan-result__label">Lettura completata</p>
+            <div class="scan-result__user">
+              <img id="scan-user-img" alt="Il tuo volto" />
+              <div class="scan-result__meta">
+                <p id="scan-user-emotion"></p>
+                <p id="scan-user-demo"></p>
+                <p class="scan-result__source" id="scan-user-source"></p>
+              </div>
+            </div>
+            <h3 class="scan-result__matches-title">Sette risonanze affini</h3>
+            <ul id="scan-matches" class="scan-result__matches"></ul>
+            <p class="scan-result__disclaimer" id="scan-disclaimer"></p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
