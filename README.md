@@ -1,71 +1,69 @@
-# The Seventh Self
+# The Seventh Self — Un osservatorio delle identità invisibili
 
-**The Seventh Self** e' un'esperienza web interattiva che esplora il mito dei "sette sosia" come connessione emotiva e percettiva, non come semplice somiglianza fisica. L'utente attraversa un globo 3D, risponde a un breve profilo, scansiona o carica un volto e riceve 7 risonanze: identita' simbolicamente affini, poi sintetizzate nella figura finale dell'**Eighth Self**.
+> **The Seventh Self** è un'esperienza interattiva che esplora l'idea di un sesto senso digitale: la capacità di percepire connessioni che normalmente rimangono invisibili.
 
-## Concept e tecnologie
+Partendo dal mito dei *"sette sosia nel mondo"*, il progetto ne ridefinisce il significato. I sosia qui non sono persone fisicamente identiche, ma individui che condividono qualcosa di più sottile: una traccia emotiva, una tensione interiore, un modo di osservare il mondo, un pattern nascosto che emerge dai dati.
 
-Il progetto funziona come un osservatorio di identita' invisibili: usa dati visivi, domande personali, geolocalizzazione evocativa e una messa in scena 3D per costruire una costellazione narrativa attorno all'utente.
+**[Vivi l'esperienza online](https://gciocc.github.io/TheSeventhSelf/)**
 
-Tecnologie principali:
+---
 
-- **Vite** per sviluppo e build frontend.
-- **JavaScript ES modules** senza framework UI.
-- **Three.js** e `OrbitControls` per globo, stelle, marker, linee e interazioni 3D.
-- **@vladmandic/face-api** per rilevare il volto in webcam lato client.
-- **HTML/CSS custom** per layout, transizioni, profilo, scanner e overlay finale.
-- **Dati statici JSON/BIN/WebP/PNG** per costellazione, embedding, atlante dei volti, texture e asset visivi.
+## Il Concetto e l'Esperienza
 
-## Architettura tecnica
+![Anteprima The Seventh Self](https://gciocc.github.io/TheSeventhSelf/assets/open.gif)
 
-La cartella sorgente principale e' `web/src/`; la build pubblicabile contiene gli stessi asset in forma statica dentro `TheSeventhSelf/`.
+Attraverso un questionario percettivo, l'analisi del volto in tempo reale e una serie di segnali, il sistema costruisce una mappa di affinità. Ricerca così, all'interno di un archivio di migliaia di identità, sette presenze connesse all'utente da relazioni non immediatamente visibili, visualizzandole come una costellazione sul globo terrestre.
 
-- `main.js`: regia dell'esperienza. Gestisce stati UI, intro, caricamento, profilo, scanner, passaggio alle 7 risonanze e comparsa dell'Eighth Self.
-- `globe.js`: mondo iniziale in Three.js. Crea globo, atmosfera, campo stellare, marker dei volti, picking con raycaster e animazioni di ingresso.
-- `resonanceWorld.js`: seconda scena 3D dopo la scansione. Mostra utente e 7 risonanze sul globo, collegandole con linee e animazioni di convergenza.
-- `scanner.js`: acquisizione da webcam o upload. Precarica Face API, controlla permessi camera e genera il risultato in modalita' statica.
-- `matcher.js`: utility per matching vettoriale su embedding a 512 dimensioni; nel flusso attuale il progetto usa una simulazione locale per restare deployabile senza backend.
-- `faceAtlas.js`, `faces.js`, `facePortraitEffect.js`: caricamento dei volti da `/faces` o dagli atlas WebP, billboard 3D e shader/effetto pixel portrait.
-- `geoLocations.js`, `landPoints.js`: conversione lat/lon in coordinate 3D e fallback su punti di terra emersa.
-- `experienceLoader.js`, `ambientSound.js`, `narrative.js`, `resonanceCopy.js`: preload, audio ambientale e testi narrativi.
-- `userProfile.js`: domande, validazione e sintesi del profilo utente.
-- `eighthSelf.js`: overlay finale, scelta della risonanza conclusiva e reveal del volto.
+Al termine dell'esperienza, le sette identità convergono nella generazione di una nuova figura simbolica: **The Eighth Self** (L'Ottava Risonanza), una possibile versione latente di noi stessi creata dalla fusione delle connessioni emerse.
 
-Dati principali:
+---
 
-- `web/public/data/constellation.json`: 2.000 nodi usati nella costellazione, derivati da un dataset indicato come 69.987 volti.
-- `web/public/data/embeddings.bin` e `embeddings_index.json`: matrice di embedding per matching vettoriale.
-- `web/public/data/atlas/`: sprite atlas WebP dei volti, con manifest.
-- `web/public/textures/`: texture del globo e maschera terre.
+## Funzionalità Principali
 
-Nota: nella versione statica GitHub Pages non c'e' backend Python. Le 7 risonanze vengono scelte localmente dai dati della costellazione; la webcam serve per costruire l'esperienza e verificare la presenza del volto, non per un riconoscimento biometrico reale.
+* **Lettura del Volto & Webcam Input:** Analisi dei tratti somatici ed espressivi direttamente tramite feed video in tempo reale.
+* **Questionario Dinamico:** Test psicometrico/percettivo composto da 5 domande situazionali per tracciare lo stato emotivo corrente.
+* **Mappa Interattiva (Canvas 3D):** Visualizzazione delle 7 risonanze geolocalizzate su un globo, collegate tra loro e rispetto all'utente.
+* **Visualizzazione "The Eighth Self":** Algoritmo di sintesi finale per generare la figura latente derivata dalle risonanze.
 
-## Immagini, video e GIF
+---
 
-![Preview desktop di TheSeventhSelf](./assets/open.gif)
+## Tecnologie Utilizzate
 
-## Come provare l'esperienza
+Il progetto è sviluppato come un'applicazione web interattiva *client-side*, ottimizzata per le performance grafiche e l'elaborazione dati in locale:
 
-Online: https://gciocc.github.io/TheSeventhSelf/
+* **Frontend:** HTML5, CSS3, JavaScript (ES6+)
+* **Computer Vision / Face Tracking:** *(Face-api.js libreria specifica usata per la lettura del volto)*
+* **Grafica & Animazioni:** Canvas API / WebGL *(Three.js per il globo in 3D)*
+* **Hosting:** GitHub Pages (deploy automatizzato)
 
-In locale, dal sorgente:
+---
 
+## Sviluppo Locale (Come Iniziare)
+
+Poiché l'applicazione richiede l'accesso alla webcam e l'utilizzo di risorse statiche (modelli di face tracking, asset multimediali), è consigliabile eseguirla tramite un server locale.
+
+### Prerequisiti
+* [Node.js](https://nodejs.org/) installato (facoltativo, utile per avviare un server locale velocemente).
+
+### Installazione e Avvio
+
+1. **Clona la repository:**
 ```bash
-npm install --prefix web
-npm run dev
-```
+   git clone [https://github.com/gciocc/TheSeventhSelf.git](https://github.com/gciocc/TheSeventhSelf.git)
+   cd TheSeventhSelf
 
-Poi aprire `http://localhost:5173`. La webcam funziona solo in contesto sicuro: `localhost` oppure HTTPS.
+### Struttura del Progetto
 
-Build di produzione:
+├── assets/                  # Loghi, immagini di background e asset grafici
+├── models/                  # Modelli pre-addestrati per il face tracking
+├── js/                      # Logica JavaScript (gestione canvas, webcam, domande)
+├── css/                     # Fogli di stile e animazioni dell'interfaccia
+├── index.html               # Entry point dell'esperienza interattiva
+└── README.md                # Questo file
 
-```bash
-npm run dist
-```
+Autorialità e Crediti
+Progetto e autorialità: Giorgia Ciocca — IED (Istituto Europeo di Design)
 
-L'output viene generato in `web/dist/` e puo' essere pubblicato come sito statico.
+Contatti: g.ciocca@ied.edu
 
-## Contatti
-
-Progetto e autorialita': **Giorgia Ciocca**  
-Email: `g.ciocca@ied.edu`  
-GitHub: `@gciocc`
+The Seventh Self non cerca di dirti chi sei. Ti invita a chiederti da quante identità invisibili sei composto.
