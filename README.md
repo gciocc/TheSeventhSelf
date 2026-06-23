@@ -41,14 +41,9 @@ Nota: nella versione statica GitHub Pages non c'e' backend Python. Le 7 risonanz
 
 ## Immagini, video e GIF
 
-Asset visivi inclusi nel progetto:
-
-- Logo: `assets/seventh-self-logo.png`
-- Preview globo: `assets/globe-inspo-0.png`, `assets/globe-inspo-62.png`, `assets/globe-inspo-187.png`
-- Preview ingresso: `assets/entry-inspo-15.png`, `assets/entry-inspo-45.png`, `assets/entry-inspo-75.png`
-- Audio ambiente: `assets/ambient-space.mp3`
-
-Per una demo video/GIF, il percorso consigliato e': intro -> esplorazione globo -> profilo -> webcam/upload -> 7 risonanze -> Eighth Self.
+<p align="center">
+  <img src="./assets/1.gif" alt="Preview desktop di TheSeventhSelf" width="700">
+</p>
 
 ## Come provare l'esperienza
 
