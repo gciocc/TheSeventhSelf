@@ -4,6 +4,8 @@
 
 Partendo dal mito dei *"sette sosia nel mondo"*, il progetto ne ridefinisce il significato. I sosia qui non sono persone fisicamente identiche, ma individui che condividono qualcosa di più sottile: una traccia emotiva, una tensione interiore, un modo di osservare il mondo, un pattern nascosto che emerge dai dati.
 
+![Uploading 1.gif…]()
+
 **[Vivi l'esperienza online](https://gciocc.github.io/TheSeventhSelf/)**
 
 ---
