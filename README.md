@@ -52,6 +52,8 @@ Poiché l'applicazione richiede l'accesso alla webcam e l'utilizzo di risorse st
    git clone [https://github.com/gciocc/TheSeventhSelf.git](https://github.com/gciocc/TheSeventhSelf.git)
    cd TheSeventhSelf
 
+---
+
 ### Struttura del Progetto
 
 ├── assets/                  # Loghi, immagini di background e asset grafici
