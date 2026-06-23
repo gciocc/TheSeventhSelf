@@ -1,4 +1,4 @@
-# The Seventh Self — Un osservatorio delle identità invisibili
+# The Seventh Self: Un osservatorio delle identità invisibili
 
 > **The Seventh Self** è un'esperienza interattiva che esplora l'idea di un sesto senso digitale: la capacità di percepire connessioni che normalmente rimangono invisibili.
 
