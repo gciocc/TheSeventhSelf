@@ -44,6 +44,9 @@ Nota: nella versione statica GitHub Pages non c'e' backend Python. Le 7 risonanz
 <p align="center">
   <img src="./assets/1.gif" alt="Preview desktop di TheSeventhSelf" width="700">
 </p>
+<p align="center">
+  <img src="./assets/2.png" alt="Preview desktop di TheSeventhSelf" width="700">
+</p>
 
 ## Come provare l'esperienza
 
