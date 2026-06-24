@@ -12,8 +12,8 @@ Partendo dal mito dei *"sette sosia nel mondo"*, il progetto ne ridefinisce il s
 Attraverso un questionario percettivo, l'analisi del volto in tempo reale e una serie di segnali
 
 <p align="center">
-  <img src="percorso/2.png" alt="Prima Immagine" width="45%" />
-  <img src="percorso/3.png" alt="Seconda Immagine" width="45%" />
+  <img src="assets/2.png" alt="Prima Immagine" width="45%" />
+  <img src="assets/3.png" alt="Seconda Immagine" width="45%" />
 </p>
 
 il sistema costruisce una mappa di affinità. Ricerca così, all'interno di un archivio di migliaia di identità, sette presenze connesse all'utente da relazioni non immediatamente visibili, visualizzandole come una costellazione sul globo terrestre.
