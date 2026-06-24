@@ -6,9 +6,7 @@ Partendo dal mito dei *"sette sosia nel mondo"*, il progetto ne ridefinisce il s
 
 **[Vivi l'esperienza online](https://gciocc.github.io/TheSeventhSelf/)**
 
-<p align="center">
-  <img src="assets/1.gif" alt="open" width="300">
-</p>
+<img src="assets/1.gif" alt="open" width="500">
 ---
 
 ## Il Concetto e l'Esperienza
