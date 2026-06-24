@@ -7,17 +7,25 @@ Partendo dal mito dei *"sette sosia nel mondo"*, il progetto ne ridefinisce il s
 **[Vivi l'esperienza online](https://gciocc.github.io/TheSeventhSelf/)**
 
 <img src="assets/1.gif" alt="open" width="500">
----
 
 ## Il Concetto e l'Esperienza
 
 ![Anteprima The Seventh Self](https://gciocc.github.io/TheSeventhSelf/assets/open.gif)
 
-Attraverso un questionario percettivo, l'analisi del volto in tempo reale e una serie di segnali, il sistema costruisce una mappa di affinità. Ricerca così, all'interno di un archivio di migliaia di identità, sette presenze connesse all'utente da relazioni non immediatamente visibili, visualizzandole come una costellazione sul globo terrestre.
+Attraverso un questionario percettivo, l'analisi del volto in tempo reale e una serie di segnali
+
+<p align="center">
+  <img src="percorso/2.png" alt="Prima Immagine" width="45%" />
+  <img src="percorso/3.png" alt="Seconda Immagine" width="45%" />
+</p>
+
+il sistema costruisce una mappa di affinità. Ricerca così, all'interno di un archivio di migliaia di identità, sette presenze connesse all'utente da relazioni non immediatamente visibili, visualizzandole come una costellazione sul globo terrestre.
+
+<img src="assets/4.gif" alt="seventh" width="500">
 
 Al termine dell'esperienza, le sette identità convergono nella generazione di una nuova figura simbolica: **The Eighth Self** (L'Ottava Risonanza), una possibile versione latente di noi stessi creata dalla fusione delle connessioni emerse.
 
----
+<img src="assets/5.png" alt="eight" width="500">
 
 ## Funzionalità Principali
 
