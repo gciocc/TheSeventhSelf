@@ -9,9 +9,6 @@ Partendo dal mito dei *"sette sosia nel mondo"*, il progetto ne ridefinisce il s
 <img src="assets/1.gif" alt="open" width="500">
 
 ## Il Concetto e l'Esperienza
-
-![Anteprima The Seventh Self](https://gciocc.github.io/TheSeventhSelf/assets/open.gif)
-
 Attraverso un questionario percettivo, l'analisi del volto in tempo reale e una serie di segnali
 
 <p align="center">
